@@ -37,13 +37,13 @@ const Navigation = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3 group">
-            <div className="p-2 bg-gradient-warm rounded-full group-hover:scale-110 transition-transform duration-300">
-              <Coffee className="h-6 w-6 text-primary" />
+          <div className="flex items-center space-x-4 group cursor-pointer" onClick={() => scrollToSection('#home')}>
+            <div className="p-3 bg-gradient-warm rounded-2xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-soft">
+              <Coffee className="h-8 w-8 text-primary" />
             </div>
             <div>
-              <h1 className="font-script text-2xl font-bold text-primary">Cafe 16</h1>
-              <p className="text-xs text-muted-foreground">Where Coffee Meets Comfort</p>
+              <h1 className="font-script text-3xl font-bold text-primary group-hover:text-accent transition-colors duration-300">Cafe 16</h1>
+              <p className="text-sm text-muted-foreground font-medium">☕ Where Coffee Meets Comfort</p>
             </div>
           </div>
 
@@ -61,9 +61,9 @@ const Navigation = () => {
             ))}
             <Button 
               onClick={() => scrollToSection('#booking')}
-              className="bg-gradient-warm hover:shadow-warm hover:scale-105 transition-all duration-300 font-medium"
+              className="bg-gradient-warm hover:shadow-hover hover:scale-110 transition-all duration-500 font-bold px-6 py-3 rounded-full"
             >
-              Book a Table
+              🪑 Book a Table
             </Button>
           </div>
 
