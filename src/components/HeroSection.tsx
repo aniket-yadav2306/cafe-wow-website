@@ -18,7 +18,7 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img 
-          src={heroImage} 
+          src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4np5d9aqAee2Bf25eotYzS9ylSGIUHShWHuG73BVunr64KJhIDX2zwbH7jd2ko2cVDUrCrpYPHV0qjiZ8t3c-03QkVRagQ66AZK78B4VZDeu3r_OnBhiRfx0YqE_SWN130kpH9acGA=s1360-w1360-h1020-rw" 
           alt="Cafe 16 Interior" 
           className="w-full h-full object-cover scale-105 animate-float"
         />
@@ -59,7 +59,8 @@ const HeroSection = () => {
             onClick={scrollToAbout}
             variant="outline"
             size="lg"
-            className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all duration-300 text-lg px-8 py-4 font-semibold"
+className="border-primary-foreground bg-primary-foreground text-primary transition-all duration-300 text-lg px-8 py-4 font-semibold"
+
           >
             Discover Our Story
           </Button>

@@ -109,7 +109,8 @@ const Footer = () => {
                     key={social.name}
                     variant="outline"
                     size="icon"
-                    className="border-primary-foreground/20 text-primary-foreground hover:border-accent hover:bg-accent hover:text-primary transition-all duration-300"
+                    className="border-primary-foreground/20 bg-accent text-primary transition-all duration-300"
+
                     onClick={() => window.open(social.url)}
                   >
                     <social.icon className="h-4 w-4" />
