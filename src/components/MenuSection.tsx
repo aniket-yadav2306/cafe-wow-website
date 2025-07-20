@@ -39,12 +39,17 @@ const MenuSection = () => {
     <section id="menu" className="py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-script text-5xl font-bold text-primary mb-4 animate-fade-in-up">
+        <div className="text-center mb-20">
+          <div className="mb-6">
+            <span className="inline-block bg-accent/20 rounded-full px-8 py-3 text-primary font-bold text-lg mb-8 animate-bounce-gentle">
+              🍽️ Fresh Daily Menu 🍽️
+            </span>
+          </div>
+          <h2 className="font-script text-6xl md:text-7xl font-bold text-primary mb-6 animate-fade-in-up">
             Our Menu
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-            Crafted with love, served with care. Every item on our menu tells a story of quality and passion.
+          <p className="text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed animate-fade-in-up font-medium">
+            Crafted with love, served with care. Every item on our menu tells a story of quality and passion. ✨
           </p>
         </div>
 

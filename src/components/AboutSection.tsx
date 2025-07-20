@@ -29,12 +29,17 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-gradient-sage">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-script text-5xl font-bold text-primary mb-4 animate-fade-in-up">
+        <div className="text-center mb-20">
+          <div className="mb-6">
+            <span className="inline-block bg-primary/10 rounded-full px-8 py-3 text-primary font-bold text-lg mb-8 animate-bounce-gentle">
+              ✨ About Us ✨
+            </span>
+          </div>
+          <h2 className="font-script text-6xl md:text-7xl font-bold text-primary mb-6 animate-fade-in-up">
             Our Story
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-            Born from a passion for community and great coffee, Cafe 16 has been bringing people together since day one.
+          <p className="text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed animate-fade-in-up font-medium">
+            Born from a passion for community and great coffee, Cafe 16 has been bringing people together since day one. 🌟
           </p>
         </div>
 

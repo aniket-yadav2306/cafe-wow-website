@@ -34,51 +34,56 @@ const HeroSection = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="animate-fade-in-up">
-          <h1 className="font-script text-6xl md:text-8xl font-bold text-primary-foreground mb-6 leading-tight">
+          <div className="mb-8">
+            <span className="inline-block bg-accent/20 backdrop-blur-sm rounded-full px-6 py-2 text-primary-foreground font-medium text-sm mb-6 animate-bounce-gentle">
+              ✨ Now Open Daily 7AM - 9PM ✨
+            </span>
+          </div>
+          <h1 className="font-script text-7xl md:text-9xl font-bold text-primary-foreground mb-8 leading-tight drop-shadow-2xl">
             Cafe 16
           </h1>
-          <p className="font-elegant text-2xl md:text-3xl text-primary-foreground/90 mb-4">
+          <p className="font-elegant text-3xl md:text-4xl text-primary-foreground/95 mb-6 drop-shadow-lg">
             Where Coffee Meets Comfort
           </p>
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
             A cozy, pet-friendly community space where every cup tells a story, every corner invites connection, and every moment feels like home.
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-scale-in">
           <Button 
             onClick={scrollToBooking}
             size="lg"
-            className="bg-gradient-warm hover:shadow-warm hover:scale-105 transition-all duration-300 text-lg px-8 py-4 font-semibold"
+            className="bg-gradient-warm hover:shadow-hover hover:scale-110 transition-all duration-500 text-xl px-12 py-6 font-bold rounded-full border-2 border-accent/30 backdrop-blur-sm"
           >
-            Reserve Your Table
+            🪑 Reserve Your Table
           </Button>
-          <Button 
-            onClick={scrollToAbout}
-            variant="outline"
-            size="lg"
-className="border-primary-foreground bg-primary-foreground text-primary transition-all duration-300 text-lg px-8 py-4 font-semibold"
+<Button 
+  onClick={scrollToAbout}
+  variant="outline"
+  size="lg"
+              className="bg-gradient-warm hover:shadow-hover hover:scale-110 transition-all duration-500 text-xl px-12 py-6 font-bold rounded-full border-2 border-accent/30 backdrop-blur-sm"
 
-          >
-            Discover Our Story
-          </Button>
+>
+  ☕ Discover Our Story
+</Button>
         </div>
 
         {/* Features Highlight */}
-        <div className="flex flex-wrap justify-center gap-6 mt-12 animate-slide-in-left">
-          <div className="flex items-center space-x-2 bg-primary-foreground/20 backdrop-blur-sm rounded-full px-4 py-2">
-            <Heart className="h-5 w-5 text-accent" />
-            <span className="text-primary-foreground font-medium">Pet-Friendly</span>
+        <div className="flex flex-wrap justify-center gap-8 mt-16 animate-slide-in-left">
+          <div className="flex items-center space-x-3 bg-gradient-warm/20 backdrop-blur-sm rounded-2xl px-6 py-4 hover:scale-105 transition-all duration-300 shadow-soft">
+            <Heart className="h-6 w-6 text-accent animate-bounce-gentle" />
+            <span className="text-primary-foreground font-bold text-lg">🐾 Pet-Friendly</span>
           </div>
-          <div className="flex items-center space-x-2 bg-primary-foreground/20 backdrop-blur-sm rounded-full px-4 py-2">
-            <Star className="h-5 w-5 text-accent" />
-            <span className="text-primary-foreground font-medium">Live Music</span>
+          <div className="flex items-center space-x-3 bg-gradient-warm/20 backdrop-blur-sm rounded-2xl px-6 py-4 hover:scale-105 transition-all duration-300 shadow-soft">
+            <Star className="h-6 w-6 text-accent animate-float" />
+            <span className="text-primary-foreground font-bold text-lg">🎵 Live Music</span>
           </div>
-          <div className="flex items-center space-x-2 bg-primary-foreground/20 backdrop-blur-sm rounded-full px-4 py-2">
-            <Heart className="h-5 w-5 text-accent" />
-            <span className="text-primary-foreground font-medium">Community Hub</span>
+          <div className="flex items-center space-x-3 bg-gradient-warm/20 backdrop-blur-sm rounded-2xl px-6 py-4 hover:scale-105 transition-all duration-300 shadow-soft">
+            <Heart className="h-6 w-6 text-accent animate-bounce-gentle" />
+            <span className="text-primary-foreground font-bold text-lg">🤝 Community Hub</span>
           </div>
         </div>
       </div>
